@@ -16,6 +16,10 @@
             font-size: 2.0em;
             margin-top: 100px;
         }
+
+        .btn {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -24,7 +28,10 @@
         let kujis = ['大吉', '吉', '中吉', '小吉', '末吉', '凶', '大凶',];
         let kuji = Math.floor(Math.random() * kujis.length);
         document.write('<p>あなたの今年の運勢は、' + kujis[kuji] + 'です。</p>');
+
     </script>
+    <input class="btn" type="button" value="もう一度おみくじを引く" onclick="window.location.reload();" />
+
 </body>
 
 </html>
